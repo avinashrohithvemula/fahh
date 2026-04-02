@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🔍 SEO Tags -->
+    <meta name="description" content="Simple sound button website. Click the button to play sound instantly.">
+    <meta name="keywords" content="sound button, play sound, button click sound, audio button, fun sound app">
+    <meta name="author" content="Your Name">
+
+    <!-- 🌐 Social Sharing (optional but useful) -->
+    <meta property="og:title" content="fahhhhhhhh Button App">
+    <meta property="og:description" content="Click the button and play sound instantly!">
+    <meta property="og:type" content="website">
+
+    <title>Sound Button</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 20px 40px;
+            font-size: 20px;
+            background-color: #00ffcc;
+            color: black;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background-color: #00cc99;
+        }
+    </style>
+</head>
+
+<body>
+
+<button id="btn">click here 🔊</button>
+
+<audio id="mySound" src="fahhh_audio.mpeg"></audio>
+
+<script>
+const btn = document.getElementById("btn");
+const sound = document.getElementById("mySound");
+
+btn.addEventListener("click", () => {
+    sound.currentTime = 0;
+    sound.play();
+});
+</script>
+
+</body>
+</html>
