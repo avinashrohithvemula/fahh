@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6548564246534816"
-     crossorigin="anonymous"></script>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 🔍 SEO Tags -->
-    <meta name="description" content="Simple sound button website. Click the button to play sound instantly.">
-    <meta name="keywords" content="sound button, play sound, button click sound, audio button, fun sound app">
-    <meta name="author" content="Your Name">
+    <!-- AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6548564246534816"
+     crossorigin="anonymous"></script>
 
-    <!-- 🌐 Social Sharing (optional but useful) -->
-    <meta property="og:title" content="fahhhhhhhh Button App">
-    <meta property="og:description" content="Click the button and play sound instantly!">
-    <meta property="og:type" content="website">
+    <!-- SEO -->
+    <meta name="description" content="Simple sound button website. Click the button to play sound instantly.">
+    <meta name="keywords" content="sound button, play sound, audio button">
+    <meta name="author" content="Your Name">
 
     <title>Sound Button</title>
 
@@ -27,7 +24,25 @@
 
         body {
             background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .container {
+            height: 80%;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
@@ -40,19 +55,32 @@
             border: none;
             border-radius: 12px;
             cursor: pointer;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            transform: scale(1.1);
-            background-color: #00cc99;
         }
     </style>
 </head>
 
 <body>
 
-<button id="btn">click here 🔊</button>
+<!-- ✅ NAV moved here -->
+<nav>
+  <a href="home.html">Home</a> |
+  <a href="about.html">About</a> |
+  <a href="contact.html">Contact</a> |
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<div class="container">
+
+<h1>Sound Button App</h1>
+
+<p>
+Click the button below to play a fun sound instantly.
+This tool is simple, fast, and works on all devices.
+</p>
+
+<button id="btn">Click here 🔊</button>
+
+</div>
 
 <audio id="mySound" src="fahhh_audio.mpeg"></audio>
 
